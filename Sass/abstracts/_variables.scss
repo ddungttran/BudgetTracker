@@ -1,0 +1,29 @@
+$colors: (
+    primary: #D9D9D9,
+    secondary: #737373,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+
+$font-sizes: (
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.2rem,
+    xs: 1rem
+);
+
+@function size($size) {
+    @return map-get($font-sizes, $size);
+}
+
+
+// Variables
+$box-border-color: #ccc;
+$box-background-color: #f9f9f9;
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+$button-color: #000000;
+$button-hover-color: #272727;

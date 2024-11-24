@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Sass/main.css" />
+    <title>Budget Tracker</title>
+  </head>
+  <body>
+    <!-- Container for all sections -->
+    <div class="container">
+      <!-- Summary Section -->
+      <section class="summary-box">
+        <div class="summary">
+          <p>Total Expenses: <span id="total-expenses">$0</span></p>
+          <p>Remaining Budget: <span id="remain-budget">$0</span></p>
+        </div>
+      </section>
+
+      <!-- Add Expenses Section -->
+      <section class="section-box">
+        <div class="section">
+          <p>Add Expenses</p>
+          <form id="expense-form">
+            <div class="input-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="input-group">
+              <label for="category">Category</label>
+              <select id="category" name="category" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="food">Food</option>
+                <option value="transportation">Transportation</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="utilities">Utilities</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="amount">Amount</label>
+              <input
+                type="number"
+                id="amount"
+                name="amount"
+                placeholder="Enter amount"
+                min="0"
+                required
+              />
+            </div>
+            <button type="submit" id="add-expense">Add Expense</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Expenses Section -->
+      <section class="section-box expenses-section">
+        <div class="section">
+          <div class="expenses-header">
+            <p class="expenses-heading">Expenses</p>
+            <div class="sort-dropdown">
+              <label for="sort-options">Sort By:</label>
+              <select id="sort-options">
+                <option value="date">Date</option>
+                <option value="category">First Letter (Category)</option>
+                <option value="amount">Amount</option>
+              </select>
+            </div>
+          </div>
+          <table id="expenses-table" class="expenses-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Dynamically populated rows -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Budget Section -->
+      <section class="section-box budget-section">
+        <div class="section">
+          <p>Monthly Budget</p>
+          <div class="budget-input">
+            <p>Current Budget: <span id="monthly-budget">$0</span></p>
+            <label for="new-budget">Update Monthly Budget:</label>
+            <input
+              type="number"
+              id="new-budget"
+              name="new-budget"
+              placeholder="Enter new budget"
+              min="0"
+            />
+            <button id="update-budget">Add Budget</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

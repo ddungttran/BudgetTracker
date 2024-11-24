@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    @include gradient-bg(color(secondary), color(primary));
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: grid;                // Enable grid layout
+    grid-template-columns: repeat(2, 1fr); // Two equal-width columns
+    grid-template-rows: auto auto;        // Two rows (auto adjusts height)
+    gap: 20px;                   // Add spacing between rows and columns
+    width: 100%;                 // Full width of the container
+    max-width: 1200px;           // Limit overall width
+    margin: 0 auto;              // Center the grid on the page
+    padding: 20px;
+  }
+  
+  section {
+    border: 2px solid $box-border-color;  // Optional border styling
+    border-radius: 10px;                 // Rounded corners
+    padding: 20px;
+    background-color: $box-background-color;
+    box-shadow: 0 4px 6px $box-shadow-color;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; // Switch to a single column layout
+    }
+  }
+  
+
+
+
+
+

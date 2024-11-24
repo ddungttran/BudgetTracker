@@ -1,0 +1,184 @@
+.summary-box {
+    border: 2px solid $box-border-color;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 20rem;
+    height: 8rem;
+    background-color: $box-background-color;
+    box-shadow: 0 4px 6px $box-shadow-color;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    p {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 18px;
+  
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  
+  .section-box {
+    border: 2px solid $box-border-color;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    max-height: 350px;
+    background-color: $box-background-color;
+    box-shadow: 0 4px 6px $box-shadow-color;
+  
+    .section {
+      text-align: left;
+  
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  
+    input,
+    select {
+      padding: 10px;
+      width: 20rem;
+      border: 1px solid $box-border-color;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  }
+  
+
+  button {
+    padding: 10px;
+    background-color: $button-color;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  
+    &:hover {
+      background-color: $button-hover-color;
+    }
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  
+    th,
+    td {
+      border: 1px solid $box-border-color;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    th {
+      background-color: $box-border-color;
+      color: white;
+      cursor: pointer; 
+    }
+  
+    tbody tr:nth-child(odd) {
+      background-color: lighten($box-background-color, 10%);
+    }
+  }
+  
+  .budget-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  
+    input {
+      padding: 10px;
+      width: 100%;
+      border: 1px solid $box-border-color;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  
+    button {
+      width: 50%;
+      margin: 0 auto; 
+    }
+  }
+ 
+
+  .expenses-section {
+    border: 2px solid $box-border-color;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 30rem;
+    background-color: $box-background-color;
+    box-shadow: 0 4px 6px $box-shadow-color;
+  
+    height: auto; 
+    max-height: none; 
+    overflow: visible; 
+    max-height: 300px; 
+    overflow-y: auto; 
+  }
+  
+
+.budget-section {
+    border: 2px solid $box-border-color;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 364px;
+    height: 250px;
+    background-color: $box-background-color;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: left;
+
+    p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        font-size: 18px;
+    
+        span {
+          font-weight: bold;
+        }
+      }
+}
+
+.expenses-header {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;              
+}
+
+
+  
+  
+
+  

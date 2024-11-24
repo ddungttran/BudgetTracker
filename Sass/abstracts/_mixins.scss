@@ -1,0 +1,48 @@
+@mixin response($breakpoint) {
+    @if($breakpoint == xl) {
+        @media(max-width: 1200px) {
+            @content;
+        }
+    }
+    
+    @if($breakpoint == lg) {
+        @media(max-width: 1000px) {
+            @content;
+        }
+    }
+    
+    @if($breakpoint == md) {
+        @media(max-width: 760px) {
+            @content;
+        }
+    }
+    
+    @if($breakpoint == sm) {
+        @media(max-width: 560px) {
+            @content;
+        }
+    }
+}
+
+@mixin gradient-bg($start-color, $end-color, $direction: to bottom) {
+    background: linear-gradient($direction, $start-color, $end-color);
+}
+
+
+//////
+// Button Mixin
+@mixin button-style($bg-color, $hover-color) {
+    background-color: $bg-color;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+  

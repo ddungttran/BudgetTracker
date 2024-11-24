@@ -6,6 +6,7 @@ Features:
 -Log expenses (date, category, amount).
 -Automatically calculates total expenses and remaining budget.
 -Sort expenses by date, category, or amount.
+
 How to Use:
 -Set Budget: Enter your budget amount and click Update Budget.
 -Add Expense: Fill in the expense form (date, category, amount) and click Add Expense.
